@@ -43,7 +43,7 @@ const MobileNav = () => {
                 <li className=' font-medium p-2 text-xl'>SHOP</li>
                 <li className='font-medium p-2 text-xl'>LOGIN/REGISTER</li>
             </ul>
-            <ul className={`list-none h-full flex flex-col items-center bg-gray-100 shadow-2xl w-[80%] fixed ${showCard ? "right-0" : " right-[-50%] transition duration-150"}`}>
+            <ul className={`list-none h-full flex flex-col items-center bg-gray-100 shadow-2xl w-[80%] fixed ${showCard ? "right-0" : " right-[1000px] transition duration-150"}`}>
                 <button onClick={showCardMethod} className=' absolute right-0 p-3 font-bold'>X</button>
                 <div className=' h-8'></div>
                 <h2 className=' text-2xl text-center py-3'>CARD</h2>
