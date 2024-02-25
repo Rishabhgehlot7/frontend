@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const Header = () => {
     return (
@@ -13,7 +14,7 @@ export const Header = () => {
 
             </div>
             <div className='flex bg-gray-100 w-full h-full p-3 justify-between'>
-                <div className='px-3 py-1'>pvcadharcard</div>
+                <Link className='px-3 py-1' to={'/'}>pvcadharcard</Link>
                 <div className=' w-[50%] flex'>
                     <input type="text" name="searchBar" id="searchBar" className=' w-full border-gray-800 border-[1px] p-1' placeholder='Search...' />
                     <button className=' bg-orange-600 p-1 text-white'>search</button>

@@ -9,7 +9,7 @@ import Footer from '../components/Footer'
 
 const Home = () => {
     return (
-        <div>
+        <div className=' m-0 p-0'>
             <Header />
             <MobileNav />
             <Poster/>

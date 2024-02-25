@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const MobileNav = () => {
     const [show, setShow] = useState(false)
@@ -17,7 +18,7 @@ const MobileNav = () => {
             </div>
             <div className='flex bg-gray-100 w-full h-full p-3 justify-between'>
                 <button onClick={showNav}>Menu</button>
-                <div className='px-3 py-1 font-bold'>pvcadharcard</div>
+                <Link className='px-3 py-1' to={'/'}>pvcadharcard</Link>
                 <button className='bg-red-600 py-1 px-3 rounded-lg text-white border-none'>Card</button>
             </div>
             <ul className={`list-none flex flex-col bg-gray-100 shadow-2xl w-[50%] fixed ${show ? "" : " left-[-50%] transition duration-150"}`}>
